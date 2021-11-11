@@ -58,7 +58,7 @@
 		"webpack-cli": "^4.8.0",
 		"@vscode/test-electron": "^1.6.2"
 	},
-	"publisher": "ManaSky",
+	"publisher": "ManaSky.com",
     "repository": {
         "type": "git",
         "url": "https://github.com/manasky/vscode-lorem-space.git"
