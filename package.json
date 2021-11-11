@@ -17,7 +17,7 @@
 		"commands": [
 			{
 				"command": "lorem-space.image",
-				"title": "Lorem Space Image"
+				"title": "Lorem.space: Insert fake placeholder image URL"
 			}
 		],
 		"configuration": {
