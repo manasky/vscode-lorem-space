@@ -5,6 +5,12 @@ import * as vscode from "vscode";
 const categories = ["random", "movie", "game", "album", "book", "face", "fashion", "shoes", "watch"];
 const defaultApiEndpoint = "https://api.lorem.space/image/";
 
+type ImageType = {
+    category: string,
+    width: number,
+    height: number,
+};
+
 export function getImageUrl(category: string, width: number, height: number): string {
     let endpoint: string = vscode.workspace.getConfiguration("loremSpace").get("apiEndpoint", "");
     if (endpoint === "") {
@@ -34,7 +40,7 @@ export function getImageUrl(category: string, width: number, height: number): st
     return url.toString();
 }
 
-async function newImage(): Promise<string> {
+async function newImage(): Promise<ImageType> {
     let category = await vscode.window.showQuickPick(
         categories,
         { canPickMany: false }
@@ -61,7 +67,11 @@ async function newImage(): Promise<string> {
     let widthNum = Number(width);
     let heightNum = Number(height);
 
-    return getImageUrl(category, widthNum, heightNum);
+    return {
+        category: category,
+        width: widthNum,
+        height: heightNum,
+    };
 }
 
 function validateSize(size: string) {
@@ -76,18 +86,18 @@ function validateSize(size: string) {
 }
 
 export async function vscodeLoremImage() {
-    const url = await newImage();
+    const imageType = await newImage();
 
     const editor = vscode.window.activeTextEditor;
     if (!editor) {
         vscode.window.showTextDocument(await vscode.workspace.openTextDocument({
-            content: url,
+            content: getImageUrl(imageType.category, imageType.width, imageType.height),
         }));
     } else {
         editor.edit((editBuilder) => {
             editor.selections.forEach((selection) => {
                 editBuilder.delete(selection);
-                editBuilder.insert(selection.start, url);
+                editBuilder.insert(selection.start, getImageUrl(imageType.category, imageType.width, imageType.height));
             });
         });
     }
