@@ -2,7 +2,17 @@ import internal = require("stream");
 import { URL } from "url";
 import * as vscode from "vscode";
 
-const categories = ["random", "movie", "game", "album", "book", "face", "fashion", "shoes", "watch"];
+const categories = [
+    "random",
+    "movie",
+    "game",
+    "album",
+    "book",
+    "face",
+    "fashion",
+    "shoes",
+    "watch",
+];
 const defaultApiEndpoint = "https://api.lorem.space/image/";
 
 type ImageType = {
