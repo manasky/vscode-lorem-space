@@ -4,7 +4,7 @@
 	"description": "Placeholder Image API but useful! (checkout https://lorem.space)",
 	"version": "0.1.0",
 	"engines": {
-		"vscode": "^1.2.0"
+		"vscode": "^1.51.0"
 	},
 	"categories": [
 		"Other"
@@ -58,7 +58,7 @@
 		"webpack-cli": "^4.8.0",
 		"@vscode/test-electron": "^1.6.2"
 	},
-	"publisher": "ManaSky.com",
+	"publisher": "ManaSky",
     "repository": {
         "type": "git",
         "url": "https://github.com/manasky/vscode-lorem-space.git"
