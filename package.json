@@ -2,7 +2,7 @@
 	"name": "lorem-space",
 	"displayName": "lorem.space",
 	"description": "Placeholder Image API but useful! (checkout https://lorem.space)",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.2.0"
 	},
