@@ -1,7 +1,7 @@
 {
 	"name": "lorem-space",
-	"displayName": "lorem.space",
-	"description": "Placeholder Image API but useful! (checkout https://lorem.space)",
+	"displayName": "lorem.space - Fake placeholder image generator",
+	"description": "Placeholder Image API but useful! 👉 https://lorem.space",
 	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.51.0"
