@@ -52,15 +52,15 @@ async function newImage(): Promise<ImageType> {
 
     let width = await vscode.window.showInputBox({
         prompt:
-            "What's the width of the image?",
-        placeHolder: "0 for auto width",
+            "Enter image width (in pixels)",
+        placeHolder: "Or press enter to use auto width",
         validateInput: validateSize,
     });
 
     let height = await vscode.window.showInputBox({
         prompt:
-            "What's the height of the image?",
-        placeHolder: "0 for auto height",
+            "Enter image height (in pixels)",
+        placeHolder: "Or press enter to use auto height",
         validateInput: validateSize,
     });
 
