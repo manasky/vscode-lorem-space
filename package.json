@@ -65,5 +65,6 @@
     },
     "bugs": {
         "url": "https://github.com/manasky/vscode-lorem-space/issues"
-    }
+    },
+		"icon": "images/icon.png"
 }
