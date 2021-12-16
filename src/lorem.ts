@@ -12,6 +12,11 @@ const categories = [
     "fashion",
     "shoes",
     "watch",
+    "burger",
+    "pizza",
+    "drink",
+    "car",
+    "house"
 ];
 const defaultApiEndpoint = "https://api.lorem.space/image/";
 
