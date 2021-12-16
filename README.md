@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### version `0.1.2`
+- Add new categories: burger, pizza, drink, car, house
 ### version `0.1.0`
 - Add multi cursor support to generate multiple image URLs
 ### version `0.0.1`
