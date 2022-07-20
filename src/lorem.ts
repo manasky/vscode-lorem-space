@@ -12,6 +12,7 @@ const categories = [
     "fashion",
     "shoes",
     "watch",
+    "furniture",
     "burger",
     "pizza",
     "drink",
