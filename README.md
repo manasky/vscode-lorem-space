@@ -23,6 +23,8 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### version `0.1.4`
+- Add a new category: furniture
 ### version `0.1.3`
 - Add new categories: burger, pizza, drink, car, house
 ### version `0.1.0`
